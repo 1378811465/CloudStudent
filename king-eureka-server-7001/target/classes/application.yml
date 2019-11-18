@@ -1,0 +1,16 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: eureka-server-7001 #应用名称，会在Eureka中显示
+eureka:
+  instance:
+    hostname: eureka7001.com  #eureka服务器的实例名
+  client:
+    fetch-registry: false #是否拉取其它服务的信息，默认是TRUE
+    register-with-eureka: false #是否注册自己的信息到EurekaServer，默认是true
+    service-url:  # EurekaServer的地址，现在是自己的地址，如果是集群，需要加上其它Server的地址
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+      #集群环境
+      defaultZone: http://eureka7002.com:7002/eureka/  #将此eurekaServer服务注册到另一个eurekaServer服务中

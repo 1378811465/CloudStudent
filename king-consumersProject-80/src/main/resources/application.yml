@@ -1,0 +1,13 @@
+server:
+  port: 80
+spring:
+  application:
+    name: consumersProject
+
+eureka:
+  instance:
+    prefer-ip-address: true # 当其它服务获取地址时提供ip而不是hostname
+    ip-address: localhost # 指定自己的ip信息，不指定的话会自己寻找
+  client:
+    service-url: #EurekaServer地址
+      defaultZone: http://localhost:7001/eureka

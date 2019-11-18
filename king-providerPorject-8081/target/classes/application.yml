@@ -1,0 +1,35 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name:  providerProject #应用名称
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  #热部署
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      #exclude: static/**,public/**
+  #关闭缓存。及时刷新
+  thymeleaf:
+    cache: false
+
+eureka:
+  instance:
+    prefer-ip-address: true #当调用getHostname获取实例的hostname时，返回ip而不是host名称,并且在EurekaServer页面上放在链接处访问路经可以显示IP地址
+    ip-address: localhost #指定自己的IP信息，不指定的话会自己寻找
+    instance-id: providerProject8081 #指定自己入住eureka服务的实例别名
+  client:
+    service-url: #EurekaServer地址
+      #单机环境
+      #defaultZone: http://localhost:7001/eureka
+      #集群环境 注册多个eurekaServer微服务中
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+info:
+  app.name: providerProject
+  company.name: king-wenge
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="king-providerPorject-8081" />
+        <module name="public-api" />
+        <module name="king-consumersProject-80" />
+        <module name="king-eureka-server-7001" />
+        <module name="king-eureka-server-7002" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="king-consumersProject-80" options="-parameters" />
+      <module name="king-eureka-server-7001" options="-parameters" />
+      <module name="king-eureka-server-7002" options="-parameters" />
+      <module name="king-providerPorject-8081" options="-parameters" />
+      <module name="public-api" options="-parameters" />
+    </option>
+  </component>
+</project>
