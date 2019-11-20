@@ -17,9 +17,9 @@
         <module>public-api</module>
         <module>king-providerPorject-8081</module>
         <module>king-consumersProject-80</module>
-        <module>king-eureka-server</module>
         <module>king-eureka-server-7002</module>
         <module>king-eureka-server-7001</module>
+        <module>king-providerProject-8082</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,14 +59,6 @@
             </resource>
         </resources>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork>
-                </configuration>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>

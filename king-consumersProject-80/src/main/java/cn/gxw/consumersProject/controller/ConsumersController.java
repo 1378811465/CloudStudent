@@ -6,7 +6,10 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class ConsumersController {
-    private static final String URL = "http://127.0.0.1:8081";
+    //private static final String URL = "http://127.0.0.1:8081";
+    //微服务应用名，可以从服务注册中心多个集群服务实现负载均衡区访问最适合的微服务
+    //如果服务注册中心有多个服务提供者Ribbon默认会通过轮询算法进行访问提供者
+    private static final String URL = "http://PROVIDERPROJECT";
 
     @Autowired
     private RestTemplate restTemplate;
