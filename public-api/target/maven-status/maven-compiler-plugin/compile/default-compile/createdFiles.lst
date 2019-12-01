@@ -1,1 +1,5 @@
+cn\gxw\publicApi\service\StudentClientService.class
+cn\gxw\publicApi\service\StudentClientServiceFallBack$1.class
 cn\gxw\publicApi\entity\Student.class
+cn\gxw\publicApi\config\FallBackConfig.class
+cn\gxw\publicApi\service\StudentClientServiceFallBack.class

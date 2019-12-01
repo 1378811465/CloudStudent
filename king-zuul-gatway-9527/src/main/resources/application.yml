@@ -1,9 +1,9 @@
 server:
-  port: 8082
+  port: 9527
 
 spring:
   application:
-    name:  providerProject #应用名称
+    name:  project-zuul-gatway #应用名称
   main:
     allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
   #热部署
@@ -16,11 +16,20 @@ spring:
   thymeleaf:
     cache: false
 
+#网关Zuul配置
+zuul:
+  routes:
+    PROVIDERPROJECT: #对应注册中心的服务名称 （最好一致）
+      serviceId: PROVIDERPROJECT #注册中心的服务名称
+      path: /king/**
+  ignored-services: PROVIDERPROJECT  #所要忽略服务
+  prefix: /api  #访问前缀
+
 eureka:
   instance:
     prefer-ip-address: true #当调用getHostname获取实例的hostname时，返回ip而不是host名称,并且在EurekaServer页面上放在链接处访问路经可以显示IP地址
     ip-address: localhost #指定自己的IP信息，不指定的话会自己寻找
-    instance-id: providerProject8082 #指定自己入住eureka服务的实例别名
+    instance-id: myZuul9527.com #指定自己入住eureka服务的实例别名
   client:
     service-url: #EurekaServer地址
       #单机环境

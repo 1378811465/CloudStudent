@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/king-provider-hystrix-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-providerPorject-8081" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-providerProject-8082" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/king-zuul-gatway-9527" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/public-api" charset="UTF-8" />
   </component>
 </project>

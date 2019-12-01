@@ -23,13 +23,18 @@
         <module>king-consumersProject-feign</module>
         <module>king-provider-hystrix-8001</module>
         <module>king-consumersProject-hystrix-dashboard</module>
+        <module>king-zuul-gatway-9527</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <!-- SpringCloud版本，是最新的F系列 Dalston.SR1 -->
-        <spring-cloud.version>Finchley.RC1</spring-cloud.version>
+        <!-- SpringCloud版本，是最新的F系列 Dalston.SR1
+        Greenwich	2.1.x
+        Finchley	2.0.x
+        Edgware	1.5.x
+        Dalston	1.5.x-->
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
