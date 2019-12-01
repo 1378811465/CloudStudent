@@ -3,8 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-consumersProject-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/king-consumersProject-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/king-consumersProject-hystrix-dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-eureka-server-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-eureka-server-7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/king-provider-hystrix-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-providerPorject-8081" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/king-providerProject-8082" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/public-api" charset="UTF-8" />

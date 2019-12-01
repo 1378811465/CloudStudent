@@ -31,5 +31,5 @@ eureka:
 info:
   app.name: providerProject
   company.name: king-wenge
-  build.artifactId: king-providerPorject-8081
-  build.version: 1.0-SNAPSHOT
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

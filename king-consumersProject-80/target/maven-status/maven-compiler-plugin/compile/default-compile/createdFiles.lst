@@ -1,0 +1,5 @@
+cn\gxw\consumersProject\ConsumersApplication.class
+cn\gxw\myRule\MySelfRule.class
+cn\gxw\consumersProject\controller\ConsumersController.class
+cn\gxw\myRule\RoundRobinRule_self.class
+cn\gxw\consumersProject\config\ConfigBean.class

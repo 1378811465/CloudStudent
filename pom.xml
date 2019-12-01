@@ -20,6 +20,9 @@
         <module>king-eureka-server-7002</module>
         <module>king-eureka-server-7001</module>
         <module>king-providerProject-8082</module>
+        <module>king-consumersProject-feign</module>
+        <module>king-provider-hystrix-8001</module>
+        <module>king-consumersProject-hystrix-dashboard</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

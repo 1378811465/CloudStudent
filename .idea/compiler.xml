@@ -8,9 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="king-eureka-server-7002" />
         <module name="king-providerPorject-8081" />
+        <module name="king-consumersProject-80" />
+        <module name="king-provider-hystrix-8001" />
         <module name="king-eureka-server-7001" />
         <module name="king-providerProject-8082" />
-        <module name="king-consumersProject-80" />
+        <module name="king-consumersProject-feign" />
+        <module name="king-consumersProject-hystrix-dashboard" />
         <module name="public-api" />
       </profile>
     </annotationProcessing>
@@ -18,8 +21,11 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="king-consumersProject-80" options="-parameters" />
+      <module name="king-consumersProject-feign" options="-parameters" />
+      <module name="king-consumersProject-hystrix-dashboard" options="-parameters" />
       <module name="king-eureka-server-7001" options="-parameters" />
       <module name="king-eureka-server-7002" options="-parameters" />
+      <module name="king-provider-hystrix-8001" options="-parameters" />
       <module name="king-providerPorject-8081" options="-parameters" />
       <module name="king-providerProject-8082" options="-parameters" />
       <module name="public-api" options="-parameters" />
